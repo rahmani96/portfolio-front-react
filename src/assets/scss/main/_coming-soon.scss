@@ -1,0 +1,39 @@
+.coming_page {
+    margin-top: 7%;
+    h1,
+    h2 {
+        font-weight: 900;
+        font-size: 125px;
+        line-height: 1;
+        letter-spacing: 5px;
+        color: #ffffff;
+        @media screen and (max-width: 768px) {
+            font-size: 80px;
+        }
+    }
+    .content {
+        p {
+            color: #ffffff;
+            margin-bottom: 0px;
+            margin-top: 50px;
+            font-size: 18px;
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    hr{
+        width: 50%; 
+        height: 10px;
+        margin: 20px 25% 0 25%;
+    }
+
+}
+  
+body.light .coming_page {
+    h1,    
+    .content p{
+        color: #666;
+    } 
+        
+} 
