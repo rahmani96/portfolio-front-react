@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import React from "react";
+import { Tabs, TabPanel } from "react-tabs";
 import AboutIndex from "./AboutIndex";
 import SwitchDark from "../switch/SwitchDark";
 import SideBarMenu from "../SideBarMenu";

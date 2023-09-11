@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Achievements from "./Achievements";
 import PersonalInfo from "./PersonalInfo";
 import cv from "../../assets/img/cv.webp";
-import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
+// import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
 import axiosConfig from "../../axiosConfig";
 import Loading from "../loading";
 
@@ -43,7 +43,7 @@ const AboutIndex = () => {
     }, [])
 
     return (
-        (Object.keys(userInfo.personalInfo).length == 0 && Object.keys(userInfo.achievementsInfo).length == 0) 
+        ((Object.keys(userInfo.personalInfo).length === 0 && Object.keys(userInfo.achievementsInfo).length === 0) || loading)
         ? <Loading />:
         <div className="container">
             <div className="row">

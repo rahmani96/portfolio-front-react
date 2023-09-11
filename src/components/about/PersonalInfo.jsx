@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Loading from "../loading";
+import React from "react";
 
 // const personalInfoContent = [
 //   { meta: "first name", metaInfo: "Steve" },

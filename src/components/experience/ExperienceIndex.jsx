@@ -21,7 +21,8 @@ const ExperienceIndex = () => {
     }, [])
 
     return (
-        Object.keys(experiences).length == 0 ? <Loading />:
+        (Object.keys(experiences).length === 0 || loading) 
+        ? <Loading /> :
         <div className="row justify-content-center">
             <div className="col-lg-6 m-15px-tb">
                 <div className="resume-box">

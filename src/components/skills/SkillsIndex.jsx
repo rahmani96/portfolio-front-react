@@ -22,7 +22,8 @@ const SkillsIndex = () => {
     }, [])
 
     return (
-        Object.keys(skills).length == 0 ? <Loading />:
+        (Object.keys(skills).length === 0 || loading) 
+        ? <Loading /> :
         <div className="row row-cols-md-5 col-md-8 offset-md-2 row-cols-sm-3 col-sm-9 offset-sm-2 row-cols-lg-5 col-lg-8 offset-lg-2">
                 {skills.map((val, i) => (
                     <div className="skill-box">

@@ -11,7 +11,7 @@ const menuItem = [
     { icon: "fa-certificate", menuName: "Certification", path:"certification" },
     { icon: "fa-folder-open", menuName: "Portfolio", path:"portfolio" },
     { icon: "fa-comments", menuName: "Contact", path:"contact" },
-    { icon: "fa-comments", menuName: "Blog", path:"blog" },
+    // { icon: "fa-comments", menuName: "Blog", path:"blog" },
 ];
 
 const SideBarMenu = () => {
@@ -22,7 +22,7 @@ const SideBarMenu = () => {
             <TabList className="icon-menu revealator-slideup revealator-once revealator-delay1">
                 {menuItem.map((item, i) => { 
                     let className = "icon-box"
-                    if (item.path.toLowerCase() == pathname.substring(1).toLowerCase()) {
+                    if (item.path.toLowerCase() === pathname.substring(1).toLowerCase()) {
                         className = "icon-box react-tabs__tab--selected"
                     }
                     return (

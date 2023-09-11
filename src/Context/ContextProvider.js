@@ -7,7 +7,7 @@ export const useTheme = () => useContext(MyContext)
 
 export default function ContextProvider({ children }) {
     const value = AllBlogData();
-    const dark = localStorage.getItem("theme-color")=="dark" ? true: false
+    const dark = localStorage.getItem("theme-color") === "dark" ? true : false
     
     return <MyContext.Provider value={{value, dark}}>
                 {children}

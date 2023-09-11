@@ -25,7 +25,7 @@ const AllRoutes = () => {
             document.querySelector("body").classList.add("light")
             document.querySelector("body").classList.remove("dark")
         }
-    }, []);
+    }, [dark]);
 
     return (
         <Routes>

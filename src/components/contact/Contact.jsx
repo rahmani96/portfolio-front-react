@@ -54,7 +54,7 @@ const Contact = () => {
                                 <h1> get in <span>touch</span></h1>
                                 <span className="title-bg">contact</span>
                             </div>
-                            {(Object.keys(contactInfo.addressInfo).length == 0 && Object.keys(contactInfo.socialInfo).length == 0) 
+                            {((Object.keys(contactInfo.addressInfo).length === 0 && Object.keys(contactInfo.socialInfo).length === 0) || loading) 
                             ? <Loading />:
                             <div className="container" data-aos="fade-up" data-aos-duration="1200">
                                 <div className="row">

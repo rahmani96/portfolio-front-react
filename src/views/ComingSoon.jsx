@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import image404 from "../assets/img/404.jpg";
-import comingSoon from "../assets/img/comS.jpg";
 import SwitchDark from "../components/switch/SwitchDark";
 import { TabPanel, Tabs } from "react-tabs";
 import SideBarMenu from "../components/SideBarMenu";
