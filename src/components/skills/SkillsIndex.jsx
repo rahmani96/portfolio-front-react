@@ -10,7 +10,6 @@ const SkillsIndex = () => {
         const getSkills = async() => await axiosConfig.get('/skill')
                 .then(function (response) {
                     response = response.data.data
-                    console.log("response: ", response);
                     setSkills(response)
                     setLoading(false)
                 })

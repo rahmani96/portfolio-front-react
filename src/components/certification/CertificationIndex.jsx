@@ -12,7 +12,6 @@ const CertificationIndex = () => {
     useEffect(() => {
         const getCertification = async() => await axiosConfig.get('/certification')
                 .then(function (response) {
-                    console.log(response.data.data);
                     const certificationInfo = response.data.data
                     setCertifications(certificationInfo) 
                     setLoading(false)

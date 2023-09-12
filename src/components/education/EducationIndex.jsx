@@ -34,7 +34,6 @@ const EducationIndex = () => {
         const getEducationInfo = async() => await axiosConfig.get('/education')
                 .then(function (response) {
                     response = response.data.data
-                    console.log("education: ", response);
                     setEducationInfo(response)
                     setLoading(false)
                 })

@@ -1,13 +1,11 @@
 import React from "react";
 
 const Address = ({info}) => {
-    console.log("info : ", info);
     return (
         <>
             <p className="open-sans-font custom-span-contact position-relative">
                 <i className="fa fa-map position-absolute"></i>
-                <span className="d-block">Address Point</span>123 Stree New York City ,
-                United States Of America 750065.
+                <span className="d-block">Address Point</span>Bab elkhwikha, rue cherif chalabi, Blida, Algerie
             </p>
             {/* End .custom-span-contact */}
 

@@ -14,7 +14,7 @@ const Achievements = (props) => {
             {achievementsContent.map((value, i) => (
                 <div className="col-6 mb-2" key={i}>
                 <div className="box-stats with-margin">
-                    {(value.box == "projects" || value.box == "educations") 
+                    {(value.box === "projects" || value.box === "educations") 
                         ? <h3 className="poppins-font position-relative other-box">{value.valBox}</h3>
                         : <h3 className="poppins-font position-relative">{value.valBox}</h3>
                     }

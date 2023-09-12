@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Home from "../components/home/Home";
 import About from "../components/about/About";
 import NotFound from "../views/NotFound";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { useTheme } from "../Context/ContextProvider";
 import Blog from "../components/blog/Blog";
 import Contact from "../components/contact/Contact";
@@ -12,11 +12,7 @@ import Education from "../components/education/Education";
 import ComingSoon from "../views/ComingSoon";
 
 const AllRoutes = () => {
-    
     const {dark} = useTheme()
-
-    console.log("theme : ", useTheme());
-
     useEffect(() => {
         if (dark) {
             document.querySelector("body").classList.add("dark")
@@ -29,6 +25,7 @@ const AllRoutes = () => {
 
     return (
         <Routes>
+            <Route path="/" element={<Navigate to="/home" replace />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
@@ -44,7 +41,6 @@ const AllRoutes = () => {
             <Route path="/portfolio" element={<ComingSoon title="portfolio" subtitle="projects" msg="This page will coming soon" />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
-            {/* <Route path="/home-rtl" element={<HomeRtl />} /> */}
             <Route path="*" element={<NotFound />} />
         </Routes>
     );
