@@ -33,7 +33,6 @@ const Contact = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         

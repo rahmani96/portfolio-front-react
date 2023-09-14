@@ -34,7 +34,6 @@ const AboutIndex = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         
@@ -81,7 +80,7 @@ const AboutIndex = () => {
                 {/*  Personal Info Ends */}
 
                 {/*  Achievements Boxes Starts */}
-                <div className="col-xl-6 col-lg-7 col-12 mt-5 mt-lg-0">
+                <div className="col-xl-6 col-lg-7 col-12 mt-5 mt-lg-0 mb-5">
                     <Achievements user={userInfo.achievementsInfo}/>
                 </div>
                 {/* Achievements Boxes Ends */}

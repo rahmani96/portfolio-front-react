@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import heroImg from "../../assets/img/hero/dark.jpg";
 // import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
+import ImageMobile from "../../assets/img/hero/MyImage.jpg";
 import { useNavigate } from "react-router-dom";
 import axiosConfig from "../../axiosConfig";
 import Loading from "../loading";
@@ -42,7 +43,6 @@ const HomeIndex = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         getUserInfo()
@@ -50,7 +50,7 @@ const HomeIndex = () => {
 
     return (
         loading ? <Loading />:
-        <div className="row home-details-container align-items-center">
+        <div className="row home-details-container align-items-center mb-5 mb-sm-0 mb-md-0 mb-lg-0 mb-xl-0 mb-xxl-0">
             <div className="col-lg-4 bg position-fixed d-none d-lg-block"
                 style={{
                     backgroundImage: `url(${process.env.PUBLIC_URL + user.image})`,
@@ -58,12 +58,7 @@ const HomeIndex = () => {
             ></div>
             <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
                 <div>
-                    <img
-                        // hadi nrmlment mobile
-                        src={user.image}
-                        className="img-fluid main-img-mobile d-sm-block d-lg-none"
-                        alt="hero man"
-                    />
+                    <img src={ImageMobile} className="img-fluid main-img-mobile d-sm-block d-lg-none" alt="hero man" />
                     <h1 className="text-uppercase poppins-font">
                         I'm {user.fullName}<span>{user.job}</span>
                     </h1>

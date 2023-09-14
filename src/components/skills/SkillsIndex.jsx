@@ -14,7 +14,6 @@ const SkillsIndex = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         getSkills()
@@ -23,25 +22,18 @@ const SkillsIndex = () => {
     return (
         (Object.keys(skills).length === 0 || loading) 
         ? <Loading /> :
-        <div className="row row-cols-md-5 col-md-8 offset-md-2 row-cols-sm-3 col-sm-9 offset-sm-2 row-cols-lg-5 col-lg-8 offset-lg-2">
+        <div className="row offset-1 col-11 offset-md-1 col-md-11 offset-lg-1 col-lg-11 mb-5 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0 mb-xxl-0">
                 {skills.map((val, i) => (
-                    <div className="skill-box">
-                        <div className="col mb-3 mt-3" key={i}>
+                    <div className="col-3 col-md-2 col-lg-2 skill-box">
+                        <div className="mb-3 mt-3" key={i}>
                             <img style={{display: "block", margin: "auto"}} 
                                 src={val.image} 
-                                width="120px" 
+                                width="100px" 
                                 height="80px" 
-                            />
+                                />
                             <h6 className="text-uppercase open-sans-font text-center mt-1 mt-sm-3">{val.name}</h6>
                         </div>
                     </div>
-                        /* <div className={`c100 ${val.skillClass}`} > */
-                            /* <span>{val.skillImage}%</span> */
-                            /* <div className="slice">
-                                <div className="bar"></div>
-                                <div className="fill"></div>
-                            </div> */
-                        /* </div> */
                 ))}
         </div>
     );

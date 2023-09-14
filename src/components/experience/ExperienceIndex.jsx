@@ -14,7 +14,6 @@ const ExperienceIndex = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         getExperience()
@@ -23,7 +22,7 @@ const ExperienceIndex = () => {
     return (
         (Object.keys(experiences).length === 0 || loading) 
         ? <Loading /> :
-        <div className="row justify-content-center">
+        <div className="row justify-content-center mb-5 mb-sm-5 mb-md-5 mb-lg-0 mb-xl-0 mb-xxl-0">
             <div className="col-lg-6 m-15px-tb">
                 <div className="resume-box">
                     <ul>

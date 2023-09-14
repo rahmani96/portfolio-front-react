@@ -4,7 +4,7 @@ const achievementsContent = [
     { valBox: "3", box: "experiences" },
     { valBox: "4", box: "certifications" },
     { valBox: "Several", box: "projects" },
-    { valBox: "Completed", box: "educations" },
+    { valBox: "Master", box: "educations" },
 ];
 
 const Achievements = (props) => {

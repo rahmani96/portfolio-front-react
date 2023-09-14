@@ -20,8 +20,8 @@ const Education = () => {
                                     <h1>My <span>Educations</span></h1>
                                     <span className="title-bg">diplomas</span>
                                 </div>
-                                <EducationIndex />
                             </div>
+                                <EducationIndex />
                         </div>
                     </TabPanel>
                 </div>

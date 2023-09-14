@@ -16,7 +16,7 @@ const Experience = () => {
                     <TabPanel className="about">
                         <div id="About">
                             <div data-aos="fade-up" data-aos-duration="1200">
-                                <div className="title-section text-left text-sm-center">
+                                <div className="title-section text-center">
                                     <h1>My <span>Experiences</span></h1>
                                     <span className="title-bg">Works</span>
                                 </div>

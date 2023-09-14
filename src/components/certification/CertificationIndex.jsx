@@ -17,7 +17,6 @@ const CertificationIndex = () => {
                     setLoading(false)
                 })
                 .catch(function (error) {
-                    console.log(error);
                     setLoading(false)
                 });
         
