@@ -31,7 +31,7 @@ const SkillsIndex = () => {
                                 width="100px" 
                                 height="80px" 
                                 />
-                            <h6 className="text-uppercase open-sans-font text-center mt-1 mt-sm-3">{val.name}</h6>
+                            <h6 className="text-uppercase open-sans-font text-center mt-1 mt-sm-3 text-box">{val.name}</h6>
                         </div>
                     </div>
                 ))}

@@ -8,5 +8,6 @@
     { "color": "purple", "hex": "#6957af" },
     { "color": "red", "hex": "#f72b1c" },
     { "color": "yellow", "hex": "#ffb400" },
-    { "color": "yellowgreen", "hex": "#9acd32" }
+    { "color": "yellowgreen", "hex": "#9acd32" },
+    { "color": "bleuMain", "hex": "#007bff" }
 ]
