@@ -1,4 +1,3 @@
-import Logger from "js-logger";
 import React, { Children } from "react";
 
 const Achievements = ({experience, certification, education, projects}) => {
