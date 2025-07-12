@@ -4,7 +4,6 @@ import PersonalInfo from "./PersonalInfo";
 import MyCV from "../../assets/img/MohamedIslamRAHMANI.pdf";
 import axiosConfig from "../../axiosConfig";
 import Loading from "../loading";
-import Logger from "js-logger";
 
 const AboutIndex = () => {
     const [userInfo, setUserInfo] = useState({personalInfo: {}})
@@ -16,12 +15,9 @@ const AboutIndex = () => {
         await axiosConfig.get('/certification')
             .then(response => {
                 response = response.data.data.length
-                // Logger.debug(response);
-                // Logger.warn("Purple Alert! Purple Alert!");
                 setCertification(response)
             })
             .catch((error) => {
-                Logger.debug(error);
             })
     }
 
