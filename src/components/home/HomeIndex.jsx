@@ -46,7 +46,7 @@ const HomeIndex = () => {
                 <div>
                     <img src={MobileImg} className="img-fluid main-img-mobile d-sm-block d-lg-none" alt="hero man" />
                     <h1 className="text-uppercase poppins-font">
-                        Je suis {user.fullName}<span>{user.job}</span>
+                        {user.fullName}<span>{user.job}</span>
                     </h1>
                     <p className="open-sans-font">{user.description}</p>
                     <button className="button" onClick={() => navigate('/about')}>
