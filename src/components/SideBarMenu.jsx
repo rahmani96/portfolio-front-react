@@ -3,13 +3,13 @@ import { useLocation } from "react-router-dom";
 import { Tab, TabList } from "react-tabs";
 
 const menuItem = [
-    { icon: "fa-home", menuName: "Home", path:"home" },
-    { icon: "fa-user", menuName: "About_Me", path:"about" },
-    { icon: "fa-cogs", menuName: "Skills", path:"skills" },
+    { icon: "fa-home", menuName: "Accueil", path:"home" },
+    { icon: "fa-user", menuName: "Sur_Moi", path:"about" },
+    { icon: "fa-cogs", menuName: "Compétences", path:"skills" },
     { icon: "fa-briefcase", menuName: "Experience", path:"experience" },
     { icon: "fa-graduation-cap", menuName: "Education", path:"education" },
     { icon: "fa-certificate", menuName: "Certification", path:"certification" },
-    { icon: "fa-folder-open", menuName: "Portfolio", path:"portfolio" },
+    { icon: "fa-folder-open", menuName: "Portefeuille", path:"portfolio" },
     { icon: "fa-comments", menuName: "Contact", path:"contact" },
     // { icon: "fa-comments", menuName: "Blog", path:"blog" },
 ];

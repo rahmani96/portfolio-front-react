@@ -17,8 +17,8 @@ const Experience = () => {
                         <div id="About">
                             <div data-aos="fade-up" data-aos-duration="1200">
                                 <div className="title-section text-center">
-                                    <h1>My <span>Experiences</span></h1>
-                                    <span className="title-bg">Works</span>
+                                    <h1>Mes <span>Expériences</span></h1>
+                                    <span className="title-bg">Projets</span>
                                 </div>
                                 <ExperienceIndex />
                             </div>

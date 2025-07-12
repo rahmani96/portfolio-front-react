@@ -2,14 +2,14 @@ import React from "react";
 
 const PersonalInfo = ({user}) => {
     const personalInfo = [
-        { title: "first name", titleInfo: user.firstName },
-        { title: "last name", titleInfo: user.lastName },
+        { title: "Nom", titleInfo: user.firstName },
+        { title: "Prénom", titleInfo: user.lastName },
         { title: "Age", titleInfo: user.age },
         { title: "Email", titleInfo: user.email },
-        { title: "Address", titleInfo: user.address },
-        { title: "WhatsApp", titleInfo: "+"+user.phone.toString().replace(/.{3}/g, '$& ')} ,
-        { title: "Freelance", titleInfo: user.freelance ? "Available": "Non Available" },
-        { title: "languages", titleInfo: user.languages.slice().join(", ") }
+        { title: "Adresse", titleInfo: user.address },
+        { title: "langues", titleInfo: user.languages.slice().join(", ") },
+        { title: "Freelance", titleInfo: user.freelance ? "Disponible": "Non Disponible" },
+        { title: "WhatsApp", titleInfo: "+"+user.phone.toString().replace(/.{3}/g, '$& ')}
     ]
 
     return (

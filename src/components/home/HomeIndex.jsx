@@ -46,11 +46,11 @@ const HomeIndex = () => {
                 <div>
                     <img src={MobileImg} className="img-fluid main-img-mobile d-sm-block d-lg-none" alt="hero man" />
                     <h1 className="text-uppercase poppins-font">
-                        I'm {user.fullName}<span>{user.job}</span>
+                        Je suis {user.fullName}<span>{user.job}</span>
                     </h1>
                     <p className="open-sans-font">{user.description}</p>
                     <button className="button" onClick={() => navigate('/about')}>
-                        <span className="button-text">more about me</span>
+                        <span className="button-text">en savoir plus</span>
                         <span className="button-icon fa fa-arrow-right"></span>
                     </button>
                 </div>

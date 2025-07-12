@@ -50,7 +50,7 @@ const Contact = () => {
                     <TabPanel className="contact">
                         <div id="Contact">
                             <div className="title-section text-center" data-aos="fade-up" data-aos-duration="1200">
-                                <h1> get in <span>touch</span></h1>
+                                <h1> entrer en <span>contact</span></h1>
                                 <span className="title-bg">contact</span>
                             </div>
                             {((Object.keys(contactInfo.addressInfo).length === 0 && Object.keys(contactInfo.socialInfo).length === 0) || loading) 
@@ -58,11 +58,11 @@ const Contact = () => {
                             <div className="container" data-aos="fade-up" data-aos-duration="1200">
                                 <div className="row">
                                     <div className="col-12 col-lg-4 text-center text-md-start">
-                                        <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3"> Don't be shy !</h3>
+                                        <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3"> Ne soyez pas timide !</h3>
                                         <p className="open-sans-font mb-4">
-                                            Please don't hesitate to contact me. 
+                                            N'hésitez pas à me contacter.
                                             <div>
-                                                I am always open to discussing new projects, new opportunities or creative ideas. 
+                                                Je suis toujours ouvert à discuter de nouveaux projets, de nouvelles opportunités ou d'idées créatives. 
                                             </div>
                                         </p>
                                         <Address info={contactInfo.addressInfo} />

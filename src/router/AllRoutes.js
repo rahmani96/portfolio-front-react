@@ -34,11 +34,11 @@ const AllRoutes = () => {
             {/* <Route path="/certification" element={<Certification />} /> 
                 hadi hiya shiha
             */}
-            <Route path="/certification" element={<ComingSoon title="certifications" subtitle="formations" msg="This page will coming soon" />} />
+            <Route path="/certification" element={<ComingSoon title="certifications" subtitle="formations" msg="Cette page sera bientôt disponible" />} />
             {/* <Route path="/portfolio" element={<Portfolio />} /> 
                 hadi hiya shiha
             */}
-            <Route path="/portfolio" element={<ComingSoon title="portfolio" subtitle="projects" msg="This page will coming soon" />} />
+            <Route path="/portfolio" element={<ComingSoon title="portfolio" subtitle="projects" msg="Cette page sera bientôt disponible" />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NotFound />} />

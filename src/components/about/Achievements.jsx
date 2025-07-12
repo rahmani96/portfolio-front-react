@@ -1,5 +1,4 @@
-import Logger from "js-logger";
-import React, { Children } from "react";
+import React from "react";
 
 const Achievements = ({experience, certification, education, projects}) => {
     const achievementsContent = [

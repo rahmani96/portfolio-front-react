@@ -17,7 +17,7 @@ const Skills = () => {
                         <div id="About">
                             <div data-aos="fade-up" data-aos-duration="1200">
                                 <div className="title-section text-center">
-                                    <h1>My <span>Skills</span></h1>
+                                    <h1>Mes <span>Compétences</span></h1>
                                     <span className="title-bg">talent</span>
                                 </div>
                                 <SkillsIndex />

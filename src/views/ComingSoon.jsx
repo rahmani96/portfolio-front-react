@@ -13,12 +13,12 @@ const ComingSoon = ({title, subtitle, msg}) => {
                     <TabPanel className="professional">
                         <div data-aos="fade-up" data-aos-duration="1200">
                             <div className="title-section text-center">
-                                <h1>My <span>{title}</span></h1>
+                                <h1>{title === "portfolio" ? "Mon" : "Mes"} <span>{title}</span></h1>
                                 <span className="title-bg">{subtitle}</span>
                             </div>
                             <div className="coming_page text-center">
                                 <div className="content">
-                                    <h1 data-aos="fade-up" data-aos-duration="1200">Coming Soon!</h1>
+                                    <h1 data-aos="fade-up" data-aos-duration="1200">Bientôt disponible!</h1>
                                     <hr className="text-center"/>
                                     <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="50">{msg}</p>
                                 </div>

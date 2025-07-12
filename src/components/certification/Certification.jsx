@@ -16,7 +16,7 @@ const Certification = () => {
                         <div id="Portfolio">
                             <div data-aos="fade-up" data-aos-duration="1200">
                                 <div className="title-section text-center">
-                                    <h1>my <span>certifications</span></h1>
+                                    <h1>Mes <span>certifications</span></h1>
                                     <span className="title-bg">formations</span>
                                 </div>
                                 <CertificationIndex />

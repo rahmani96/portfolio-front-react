@@ -88,7 +88,7 @@ const ContactIndex = () => {
 
                 <div className="col-12 text-center text-lg-start mb-3">
                     <button type="submit" className="button">
-                        <span className="button-text">Send Message</span>
+                        <span className="button-text">Envoyer le message</span>
                         <span className="button-icon fa fa-send"></span>
                     </button>
                 </div>

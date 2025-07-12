@@ -64,7 +64,7 @@ const AboutIndex = () => {
                 <div className="col-xl-6 col-lg-5 col-12">
                     <div className="row">
                         <div className="col-12">
-                            <h3 className="text-uppercase custom-title mb-0 ft-wt-600 text-center">personal informations</h3>
+                            <h3 className="text-uppercase custom-title mb-0 ft-wt-600 text-center">informations personnelles</h3>
                         </div>
 
                         <div className="col-12 text-center">
@@ -72,13 +72,13 @@ const AboutIndex = () => {
                         </div>
                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-6 mt-1 text-center">
                             <a className="button" href={MyCV} download="Mohamed Islam RAHMANI">
-                                <span className="button-text">Download CV</span>
+                                <span className="button-text">Télécharger CV</span>
                                 <span className="button-icon fa fa-download"></span>
                             </a>
                         </div>
                         <div className="col-lg-6 col-md-6 col-xs-12 col-sm-6 mt-1 text-center">
                             <a className="button" href="/contact" >
-                                <span className="button-text">Contact Me</span>
+                                <span className="button-text">Contactez-moi</span>
                                 <span className="button-icon fa fa-comments"></span>
                             </a>
                         </div>

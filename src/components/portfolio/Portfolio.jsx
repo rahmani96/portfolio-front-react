@@ -16,7 +16,7 @@ const Portfolio = () => {
                         <div id="Portfolio">
                             <div data-aos="fade-up" data-aos-duration="1200">
                                 <div className="title-section text-center">
-                                    <h1>My <span>Portfolio</span></h1>
+                                    <h1>Mon <span>Portfeuille</span></h1>
                                     <span className="title-bg">Projects</span>
                                 </div>
                                 <PortfolioIndex />

@@ -17,8 +17,8 @@ const Education = () => {
                         <div id="About">
                             <div data-aos="fade-up" data-aos-duration="1200">
                                 <div className="title-section text-center">
-                                    <h1>My <span>Educations</span></h1>
-                                    <span className="title-bg">diplomas</span>
+                                    <h1>mes <span>études</span></h1>
+                                    <span className="title-bg">diplômes</span>
                                 </div>
                             </div>
                                 <EducationIndex />
