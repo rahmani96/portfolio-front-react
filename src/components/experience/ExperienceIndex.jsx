@@ -35,12 +35,20 @@ const ExperienceIndex = () => {
                             <h5 className="poppins-font text-uppercase">{val.job}
                                 <span className="place open-sans-font">{val.company_name}</span>
                             </h5>
-                            <span className="open-sans-font">{val.description}</span>
+                            <div className="text-experience">Contexte :</div> 
+                            <div className="open-sans-font ps-4 pb-2">{val.description}</div>
+                            <div className="text-experience">Missions : </div>
                             {val.missions.map((v, i) => (
                                 <li className="open-sans-font mission">{v}</li>
                             ))}
-                            Outils et Technologies: 
-                            <p className="open-sans-font">{val.technologies.slice(0).join(', ')}</p>
+                            {val.methodologie && 
+                                <>
+                                    <div className="text-experience">Methodologie de travail :</div> 
+                                    <div className="open-sans-font ps-4 pb-2">{val.methodologie}</div>
+                                </>
+                            }
+                            <div className="text-experience">Outils et Technologies: </div>
+                            <p className="open-sans-font ps-4 pb-2">{val.technologies.slice(0).join(', ')}</p>
                         </li>
                     ))}
                     </ul>
