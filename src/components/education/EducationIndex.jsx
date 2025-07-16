@@ -52,15 +52,26 @@ const EducationIndex = () => {
                     <ul>
                     {educationInfo.map((education, i) => (
                         <li key={i}>
-                        <div className="icon">
-                            <i className="fa fa-briefcase"></i>
-                        </div>
-                        <span className="time open-sans-font text-uppercase">{education.year}</span>
-                        <h5 className="poppins-font text-uppercase">
-                            {education.degree}
-                            <span className="place open-sans-font">{education.institute}</span>
-                        </h5>
-                        <p className="open-sans-font">{education.description}</p>
+                            <div className="icon">
+                                <i className="fa fa-briefcase"></i>
+                            </div>
+                            <span className="time open-sans-font text-uppercase">{education.year}</span>
+                            <h5 className="poppins-font text-uppercase">
+                                {education.degree}
+                                <span className="place open-sans-font">{education.institute}</span>
+                            </h5>
+                            {education.description && 
+                                <>
+                                    <span className="text-experience">Titre : </span>
+                                    <span className="open-sans-font">{education.description}</span>
+                                </>    
+                            }
+                            {education.option && 
+                                <>
+                                    <span className="text-experience">Option : </span>
+                                    <span className="open-sans-font">{education.option}</span>
+                                </>    
+                            }
                         </li>
                     ))}
                     </ul>
